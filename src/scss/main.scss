@@ -1,0 +1,42 @@
+@charset "utf-8";
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap");
+
+@import url("https://use.typekit.net/ido1jks.css");
+
+$family-secondary: "Roboto Mono", "Bookmania", arial, serif;
+$family-primary: "Roboto Mono", "Nunito Sans", sans-serif;
+
+// $orange: #ffad32;
+// $orange-light: #ffe0b2;
+// $primary: $orange;
+
+@import "../../node_modules/bulma/bulma.sass";
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: $family-secondary;
+  font-weight: 700;
+}
+
+div[data-heatmap-holder] {
+  width: 100vw;
+  height: 100vh;
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  display: none;
+  z-index: 2;
+  &.visible {
+    display: block;
+  }
+  [data-close-button] {
+    cursor: pointer;
+    position: absolute;
+    right: 2rem;
+    top: 1rem;
+    z-index: 3;
+  }
+}

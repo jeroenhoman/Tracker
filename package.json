@@ -1,0 +1,21 @@
+{
+  "devDependencies": {
+    "browserify": "^17.0.0",
+    "heatmap.js": "^2.0.5",
+    "nano-css": "^5.3.5",
+    "sass": "^1.62.1",
+    "uglify-js": "^3.17.4",
+    "webpack": "^5.85.1",
+    "webpack-cli": "^5.1.3"
+  },
+  "dependencies": {
+    "bulma": "^0.9.4"
+  },
+  "scripts": {
+    "uglify": "uglifyjs src/js/main.js --output public/js/main.js --compress",
+    "browserify": "src/js/main.js -o public/js/bundle.js",
+    "scss": "sass src/scss/main.scss  public/css/main.css --watch",
+    "start": "npm run scss",
+    "build": "webpack"
+  }
+}
